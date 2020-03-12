@@ -1,0 +1,149 @@
+{% load static %}
+<html> 
+<head>
+   <style type="text/css">
+   html, body
+   {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        min-height: 100%;
+        background: white;
+    }
+
+
+
+    div 
+    {
+        width: 50%;
+        height: 50%;
+        border: 1px solid black;
+        margin: 0px -1px;
+    }
+
+    .pull-left 
+    {
+        float: left;
+    }
+
+    .pull-right 
+    {
+        float: right;
+    }
+   </style>
+   <style>
+
+/* Make the image responsive */
+#container img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.te1
+{
+    position:relative;
+    width: 100%;
+    font-size:20px;
+
+  
+}
+#container1 img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.te2
+{
+    position:relative;
+    width:50%%;
+    font-size:20px;
+
+  
+}
+
+#container2 img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.te3
+{
+    position:relative;
+    width: 100%;
+    font-size:20px;
+
+  
+}
+#container3 img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.te4
+{
+    position:relative;
+    width: 100%;
+    font-size:20px;
+
+  
+}
+.te12
+{
+    font-size:20px;
+
+}
+.te5
+{
+    position:relative;
+
+  }
+  .te6
+{
+    position:relative;
+
+  }
+
+   </style>
+</head>
+<body>
+
+    <div class="aqua pull-left" id="container">
+        <a href="{% url 'live1' %}"><button class="te1">start securing ur home</button></a>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="{% url 'live5' %}"><button class="te5">enable proximity sensor</button></a>&nbsp &nbsp
+        <a href="{% url 'live6' %}"><button class="te6">enable light sensor</button></a>&nbsp &nbsp
+        <a href="{% url 'live4' %}"><button class="te7">enable batery level reader</button></a>
+        <img src="{% static 'secure/2.jfif' %}">
+        
+        
+    </div>
+
+    <div class="blue pull-right" id="container1" >
+         &nbsp &nbsp <a href="{% url 'live2' %}"  >   <button class="te2">start using intruder detection</button></a>
+        &nbsp <a href="{% url 'motion' %}">  <button class="te2">detect motion</button></a>
+        <a href="{% url 'missing' %}">  <button class="te2">find missing items</button></a>
+        <img src="{% static 'secure/3.jfif' %}">
+    
+    </div>
+
+    <div class="green pull-left bottom" id="container2">
+        <a href="http://127.0.0.2:8080/index2" ><button class="te3">faces that were present in critical region</button></a>
+    <a href="http://127.0.0.2:8080/index1"><button class="te5">irregular motion detected</button></a>&nbsp &nbsp
+        &nbsp &nbsp<a href="http://127.0.0.2:8080/index4"><button class="te5">missing items</button></a>&nbsp &nbsp
+        <img src="{% static 'secure/4.jfif' %}">
+    	
+    </div>
+
+    <div class="tan pull-right bottom" id="container3">
+         <a href="{% url 'home' %}" ><button class="te4">know about us and our softwares <br> click here to learn about our apps</button></a>
+        <img src="{% static 'secure/1.jfif' %}">
+    	
+    </div>
+
+
+</body>
+
